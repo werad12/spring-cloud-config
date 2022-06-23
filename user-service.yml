@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: '{cipher}088fd6173adc74746ab35c3ec8f2ca16503bfae42e07bd2745ad67ee141dfad9'
+    url: jdbc:h2:mem:testdb
+
+token:
+  expiration_time: 864000001
+  secret: my-token-native223
+
+gateway:
+  ip: 172.30.1.58
+
+order_service:
+  url: http://ORDER-SERVICE/order-service/%s/orders
